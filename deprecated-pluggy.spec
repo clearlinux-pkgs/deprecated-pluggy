@@ -4,7 +4,7 @@
 #
 Name     : deprecated-pluggy
 Version  : 0.9.0
-Release  : 48
+Release  : 49
 URL      : https://files.pythonhosted.org/packages/a7/8c/55c629849c64e665258d8976322dfdad171fa2f57117590662d8a67618a4/pluggy-0.9.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/a7/8c/55c629849c64e665258d8976322dfdad171fa2f57117590662d8a67618a4/pluggy-0.9.0.tar.gz
 Summary  : plugin and hook calling mechanisms for python
@@ -14,10 +14,10 @@ Requires: deprecated-pluggy-license = %{version}-%{release}
 Requires: deprecated-pluggy-python = %{version}-%{release}
 BuildRequires : buildreq-distutils
 BuildRequires : buildreq-distutils3
+BuildRequires : deprecated-setuptools_scm-legacypython
 BuildRequires : python-core
 BuildRequires : setuptools-legacypython
 BuildRequires : setuptools_scm
-BuildRequires : setuptools_scm-legacypython
 
 %description
 ====================================================
@@ -57,7 +57,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1554324571
+export SOURCE_DATE_EPOCH=1554343668
 export MAKEFLAGS=%{?_smp_mflags}
 python2 setup.py build -b py2
 
